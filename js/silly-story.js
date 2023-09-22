@@ -8,11 +8,11 @@ var insertX = ['Donald Trump', 'Jackie Chan', 'Santa Claus'];
 var insertY = ['Area 51', 'Death Valley', 'Aruba'];
 var insertZ = ['spontaneously combusted', 'rapidly sublimated', 'evaporated instantly'];
 
-// STORY TEXT - generate a new story text with placeholders replaced by random values
-var storyText = `It was 94 fahrenheit outside, so ${randomValueFromArray(insertX)} went for a walk. When they got to ${randomValueFromArray(insertY)}, they stared in horror for a few moments, then ${randomValueFromArray(insertZ)}. Bob saw the whole thing, but he was not surprised — ${randomValueFromArray(insertX)} weighs 300 pounds, and it was a hot day.`;
-
 //FUNCTION TO GENERATE THE STORY
 function result() {
+    // STORY TEXT - generate a new story text with placeholders replaced by random values
+    var storyText = `It was 94 fahrenheit outside, so ${randomValueFromArray(insertX)} went for a walk. When they got to ${randomValueFromArray(insertY)}, they stared in horror for a few moments, then ${randomValueFromArray(insertZ)}. Bob saw the whole thing, but he was not surprised — ${randomValueFromArray(insertX)} weighs 300 pounds, and it was a hot day.`;
+
     //create a new variable called newStory and set it to the value of storyText
     var newStory = storyText;
 
@@ -20,7 +20,7 @@ function result() {
     var xItem = randomValueFromArray(insertX);
     var yItem = randomValueFromArray(insertY);
     var zItem = randomValueFromArray(insertZ);
-    
+
     //replace the three placeholders in the newStory string with the strings stored in xItem, yItem, and zItem
     newStory = newStory.replace(':insertX:', xItem);
     newStory = newStory.replace(':insertY:', yItem);
